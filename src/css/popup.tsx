@@ -16,26 +16,32 @@ export const styles: { [key: string]: CSSProperties } = {
     marginBottom: '15px',
     color: '#333',
     textAlign: 'center' as 'center',
+    fontWeight: 'bold',
+    borderBottom: '1px solid black',
   },
   list: {
     listStyleType: 'none',
     padding: '0',
   },
+  listItem: {
+    display: 'flex',            
+    alignItems: 'center',       
+    justifyContent: 'space-between',
+    padding: '12px 0',
+    borderBottom: '1px solid #ddd',
+  },
   link: {
     textDecoration: 'none',
     color: '#007bff',
     fontSize: '16px',
-    display: 'block',
-    borderBottom: '1px solid #ddd',
-    borderTop: '0.2px solid #ddd',
-    padding: '12px',
-    cursor: 'pointer', 
-    transition: 'color 0.3s ease',
+    flexGrow: 1,
+    cursor: 'pointer',
     wordBreak: 'break-word',
-    whiteSpace: 'normal', 
+    whiteSpace: 'normal',
+    marginRight: '10px',
   },
   linkHover: {
-    color: '#0056b3', 
+    color: '#0056b3',
   },
   header: {
     display: 'flex',
@@ -52,9 +58,29 @@ export const styles: { [key: string]: CSSProperties } = {
     fontWeight: 'bold',
   },
   activeTab: {
-    backgroundColor: '#cce5ff', 
+    backgroundColor: '#cce5ff',
     borderRadius: '5px',
+    padding: '10px 0px 10px 4px',
+    marginLeft: '-5px',
+    display: 'flex',            
+    alignItems: 'center',       
+    justifyContent: 'space-between',
   },
-
-  
+  closeButton: {
+    color: '#ff4d4d', 
+    fontSize: '16px', 
+    cursor: 'pointer',
+    padding: '0 5px',
+    transition: 'color 0.3s ease',
+    
+  },
+  activeCloseButton: {
+    color: '#0056b3', 
+    fontSize: '16px',
+    cursor: 'pointer',
+    padding: '0 5px',
+    transition: 'color 0.3s ease',
+    marginLeft: 'auto', 
+  },
 };
+
