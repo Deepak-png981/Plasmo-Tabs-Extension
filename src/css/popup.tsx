@@ -9,6 +9,7 @@ export const styles: { [key: string]: CSSProperties } = {
     borderRadius: '10px',
     boxShadow: '0px 1000px 10px rgba(0, 0, 0, 0.1)',
     maxHeight: '400px',
+    overflowY: 'auto',
   },
   heading: {
     fontSize: '18px',
@@ -20,21 +21,18 @@ export const styles: { [key: string]: CSSProperties } = {
     listStyleType: 'none',
     padding: '0',
   },
-  listItem: {
-    marginBottom: '10px',
-  },
   link: {
     textDecoration: 'none',
     color: '#007bff',
-    fontSize: '14px',
-    overflow: 'hidden',
-    textOverflow: 'ellipsis',
+    fontSize: '16px',
     display: 'block',
-    whiteSpace: 'nowrap',
     borderBottom: '1px solid #ddd',
-    paddingBottom: '5px',
+    borderTop: '0.2px solid #ddd',
+    padding: '12px',
     cursor: 'pointer', 
     transition: 'color 0.3s ease',
+    wordBreak: 'break-word',
+    whiteSpace: 'normal', 
   },
   linkHover: {
     color: '#0056b3', 
@@ -52,6 +50,10 @@ export const styles: { [key: string]: CSSProperties } = {
     padding: '5px 10px',
     borderRadius: '20px',
     fontWeight: 'bold',
+  },
+  activeTab: {
+    backgroundColor: '#cce5ff', 
+    borderRadius: '5px',
   },
 
   
