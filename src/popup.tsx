@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { styles } from "./css/popup"; 
-
+import './css/scrollbar.css';
 const Popup = () => {
   const [tabs, setTabs] = useState([]);
 
@@ -17,7 +17,10 @@ const Popup = () => {
 
   return (
     <div style={styles.container}>
+      <div style={styles.header}>
       <h1 style={styles.heading}>Open Tabs</h1>
+      <span style={styles.tabCount}>{tabs.length} Tabs</span>
+      </div>
       <ul style={styles.list}>
         {tabs.map((tab) => (
           <li key={tab.id} style={styles.listItem}>

@@ -7,7 +7,8 @@ export const styles: { [key: string]: CSSProperties } = {
     fontFamily: 'Arial, sans-serif',
     backgroundColor: '#f5f5f5',
     borderRadius: '10px',
-    boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)',
+    boxShadow: '0px 1000px 10px rgba(0, 0, 0, 0.1)',
+    maxHeight: '400px',
   },
   heading: {
     fontSize: '18px',
@@ -37,5 +38,21 @@ export const styles: { [key: string]: CSSProperties } = {
   },
   linkHover: {
     color: '#0056b3', 
-  }
+  },
+  header: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: '10px',
+  },
+  tabCount: {
+    fontSize: '14px',
+    backgroundColor: '#007bff',
+    color: '#fff',
+    padding: '5px 10px',
+    borderRadius: '20px',
+    fontWeight: 'bold',
+  },
+
+  
 };
